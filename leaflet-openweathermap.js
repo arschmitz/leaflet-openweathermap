@@ -6,7 +6,7 @@
 
 L.OWM = L.TileLayer.extend({
 	options: {
-		baseUrl: "http://{s}.tile.openweathermap.org/map/{layername}/{z}/{x}/{y}.png"
+		baseUrl: "http://{s}.tile.openweathermap.org/map/{layername}/{z}/{x}/{y}.png",
 		maxZoom: 18,
 		showLegend: true,
 		legendImagePath: null,
