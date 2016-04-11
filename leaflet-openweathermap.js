@@ -21,7 +21,8 @@ L.OWM = L.TileLayer.extend({
 		this._map = null;
 		this._legendControl = null;
 		this._legendId = null;
-		L.TileLayer.prototype.initialize.call(this, tileurl, options);
+		this._owmtileurl = tileurl;
+		L.TileLayer.prototype.initialize.call(this, this._owmtileurl, options);
 	},
 
 	onAdd: function(map) {
